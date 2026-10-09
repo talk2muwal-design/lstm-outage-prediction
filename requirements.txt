@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+joblib
+tensorflow
+imbalanced-learn
+shap
+python-docx
+pytest
+openpyxl
+streamlit
+plotly

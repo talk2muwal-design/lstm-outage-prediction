@@ -1,0 +1,119 @@
+{
+  "model_name": "AdaptGuard",
+  "model_version": "1.0",
+  "n_events": 104,
+  "n_feeders": 3,
+  "date_range": [
+    "2026-01-02",
+    "2026-04-30"
+  ],
+  "n_feeder_days": 357,
+  "n_sequences_total": 336,
+  "n_sequences_train": 269,
+  "n_sequences_test": 67,
+  "n_sequences_train_after_smote": 360,
+  "window": 7,
+  "target_positive_rate": 0.20903954802259886,
+  "mutual_information_top10": [
+    [
+      "event_count_roll_sum_14",
+      0.15198467326163723
+    ],
+    [
+      "event_count_roll_sum_7",
+      0.14728181295134646
+    ],
+    [
+      "event_count_roll_mean_14",
+      0.14446089027836062
+    ],
+    [
+      "event_count_roll_sum_3",
+      0.1444378401017654
+    ],
+    [
+      "total_downtime_min_roll_sum_14",
+      0.130610111437522
+    ],
+    [
+      "total_downtime_min",
+      0.12412962018704876
+    ],
+    [
+      "event_count_lag_3",
+      0.12308720698059061
+    ],
+    [
+      "event_count_roll_mean_3",
+      0.12279092653388535
+    ],
+    [
+      "event_count_roll_mean_7",
+      0.12072134293009174
+    ],
+    [
+      "days_since_last_outage",
+      0.11982539405455661
+    ]
+  ],
+  "cv_auc_mean": 0.7739936237652956,
+  "cv_fold_metrics": [
+    {
+      "Accuracy": 0.5227272727272727,
+      "Precision": 0.42424242424242425,
+      "Recall": 0.875,
+      "F1-Score": 0.5714285714285714,
+      "AUC-ROC": 0.6674107142857143,
+      "fold": 1
+    },
+    {
+      "Accuracy": 0.6136363636363636,
+      "Precision": 0.3333333333333333,
+      "Recall": 0.7,
+      "F1-Score": 0.45161290322580644,
+      "AUC-ROC": 0.6529411764705882,
+      "fold": 2
+    },
+    {
+      "Accuracy": 0.7954545454545454,
+      "Precision": 0.4,
+      "Recall": 1.0,
+      "F1-Score": 0.5714285714285714,
+      "AUC-ROC": 0.9298245614035088,
+      "fold": 3
+    },
+    {
+      "Accuracy": 0.7272727272727273,
+      "Precision": 0.35714285714285715,
+      "Recall": 0.625,
+      "F1-Score": 0.45454545454545453,
+      "AUC-ROC": 0.7274305555555556,
+      "fold": 4
+    },
+    {
+      "Accuracy": 0.8636363636363636,
+      "Precision": 0.5714285714285714,
+      "Recall": 1.0,
+      "F1-Score": 0.7272727272727273,
+      "AUC-ROC": 0.8923611111111112,
+      "fold": 5
+    }
+  ],
+  "test_metrics": {
+    "Accuracy": 0.8656716417910447,
+    "Precision": 0.5909090909090909,
+    "Recall": 1.0,
+    "F1-Score": 0.7428571428571429,
+    "AUC-ROC": 0.9373219373219374
+  },
+  "nfr1_met": true,
+  "rolling_f1_history": [
+    0.6666666666666666,
+    0.5714285714285714,
+    0.8571428571428571,
+    0.6666666666666666,
+    0.8888888888888888
+  ],
+  "retrain_batches": [],
+  "drift_threshold": 0.35
+}
